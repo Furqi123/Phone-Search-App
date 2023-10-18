@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Phone <span>Search</span> App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+    
+   
+      <div class="d-flex main">
+      
+          <select onchange="onCompanyChange()" id="company" class="form-select me-4 mb-2" aria-label="Default select example">
+             
+            </select>
+
+          <select id="brand" class="form-select me-4 mb-2" aria-label="Default select example">
+           
+            </select>
+          
+            <button onclick="filterPhone()" class="btn btn-primary mb-2" type="submit">Search</button>
+            <button onclick="showAll()" class="btn btn-primary mb-2" type="submit">Show All</button>
+     
+      
+      </div>
+
+
+      <br><br><br>
+
+      <div id="allPhone" class="row p-4">
+     
+
+      </div>
+    
+
+      
+
+
+
+    <script src="bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
